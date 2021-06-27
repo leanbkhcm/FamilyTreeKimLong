@@ -27,4 +27,13 @@ model Person {
 
 
 
+model Marriage {
+  marriageId    Int      @id @default(autoincrement())
+  maleId        Int
+  femaleId      Int
+  marriageDate  DateTime 
+  remark  		String
+}
+
+
 
