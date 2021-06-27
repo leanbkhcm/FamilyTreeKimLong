@@ -1,0 +1,38 @@
+yarn create redwood-app familyTree
+
+
+
+cd familyTree
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/leanbkhcm/FamilyTreeKimLong.git
+git push -u origin main
+
+
+
+
+Start the development server
+yarn rw dev
+
+
+
+yarn rw g page home /
+yarn rw g page about
+yarn rw g page person
+
+
+yarn rw g layout person
+
+
+yarn rw g scaffold person
+yarn rw g scaffold post
+
+
+
+yarn rw prisma migrate dev --name testPost
+
+
+yarn rw g scaffold person
+yarn rw g scaffold post

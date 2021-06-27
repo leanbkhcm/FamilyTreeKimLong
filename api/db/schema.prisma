@@ -18,7 +18,7 @@ model Person {
   hintName      String
   seqInFamilyId	Int
   sex			String
-  birthDay      DateTime 
+  birthDay      DateTime
   email         String  @unique
   phoneNo       String
   remark  		String
@@ -31,7 +31,7 @@ model Marriage {
   marriageId    Int      @id @default(autoincrement())
   maleId        Int
   femaleId      Int
-  marriageDate  DateTime 
+  marriageDate  DateTime
   remark  		String
 }
 
@@ -46,3 +46,9 @@ model Association {
 
 
 
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String
+  body      String
+  createdAt DateTime @default(now())
+}

@@ -22,27 +22,27 @@ describe('people', () => {
   scenario('creates a person', async () => {
     const result = await createPerson({
       input: {
-        fatherId: 1523425,
-        motherId: 7747441,
+        fatherId: 4653177,
+        motherId: 3199286,
         name: 'String',
         hintName: 'String',
-        seqInFamilyId: 178920,
+        seqInFamilyId: 7454251,
         sex: 'String',
-        birthDay: '2021-06-25T22:42:52Z',
-        email: 'String8722216',
+        birthDay: '2021-06-27T03:33:36Z',
+        email: 'String1673262',
         phoneNo: 'String',
         remark: 'String',
       },
     })
 
-    expect(result.fatherId).toEqual(1523425)
-    expect(result.motherId).toEqual(7747441)
+    expect(result.fatherId).toEqual(4653177)
+    expect(result.motherId).toEqual(3199286)
     expect(result.name).toEqual('String')
     expect(result.hintName).toEqual('String')
-    expect(result.seqInFamilyId).toEqual(178920)
+    expect(result.seqInFamilyId).toEqual(7454251)
     expect(result.sex).toEqual('String')
-    expect(result.birthDay).toEqual('2021-06-25T22:42:52Z')
-    expect(result.email).toEqual('String8722216')
+    expect(result.birthDay).toEqual('2021-06-27T03:33:36Z')
+    expect(result.email).toEqual('String1673262')
     expect(result.phoneNo).toEqual('String')
     expect(result.remark).toEqual('String')
   })
@@ -51,10 +51,10 @@ describe('people', () => {
     const original = await person({ id: scenario.person.one.id })
     const result = await updatePerson({
       id: original.id,
-      input: { fatherId: 847777 },
+      input: { fatherId: 2856026 },
     })
 
-    expect(result.fatherId).toEqual(847777)
+    expect(result.fatherId).toEqual(2856026)
   })
 
   scenario('deletes a person', async (scenario) => {
