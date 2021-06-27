@@ -37,3 +37,12 @@ model Marriage {
 
 
 
+model Association {
+  relationshipId    Int      @id @default(autoincrement())
+  person1Id         Int
+  person2Id         Int
+  remark  		    String
+}
+
+
+
